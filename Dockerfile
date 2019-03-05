@@ -13,4 +13,4 @@ RUN apk --no-cache add ca-certificates
 COPY --from=builder /go/bin/app /app
 ENTRYPOINT ./app web
 LABEL Name=baab Version=0.0.1
-EXPOSE 8080
+EXPOSE 8888
