@@ -38,7 +38,7 @@ to quickly create a Cobra application.`,
 			fmt.Fprint(w, "Hello, fandogh")
 		})
 
-		log.Fatal(http.ListenAndServe(":8080", nil))
+		log.Fatal(http.ListenAndServe(":8888", nil))
 	},
 }
 
