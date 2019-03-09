@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: webapp-ingress
+spec:
+  rules:
+  - host: baab.com
+    http:
+      paths:
+      - path: /webapp1
+        backend:
+          serviceName: baab-app-svc
+          servicePort: 80
+      - backend:
+          serviceName: baab-app-svc
+          servicePort: 80
